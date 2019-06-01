@@ -1,25 +1,29 @@
 class Plant {
-    constructor(productName, newName) {
+    constructor(productName, productImage) {
         this.productName = productName;
-        this.newName = newName;
+        this.productImage = productImage;
     }
 }
 
-let xxx = new Plant('xxxName', 'newXxx');
-let yyy = new Plant('yyyName', 'newYyy');
+let xxx = new Plant('xxxName', 'xxxGreen');
+let yyy = new Plant('yyyName', 'yyyGreen');
 
 let plants = [xxx, yyy];
 
+let productImages = new Map();
+productImages.set('green', new Map([['xxxName', 'xxxGreen'],['yyyName', 'yyyGreen']]));
+productImages.set('red', new Map([['xxxName', 'xxxRed'],['yyyName', 'yyyRed']]));
+
+
 let tmp = function tmp() {
 
-    let buttonDiv = this.parentNode;
-    let divText = buttonDiv.firstChild;
-    for (let i = 0; i < plants.length ; i++) {
-        if (plants[i].productName === buttonDiv.id) {
-            divText.innerHTML  = plants[i].newName;
-            break;
-        }
-    }
+    let buttonColor = this.getAttribute('class'); // получаем класс кнопки - это цвет green/red
+    let buttonDiv = this.parentNode; // достаем див в котором лежит кнопка
+    let divText = buttonDiv.firstChild; // достаем p из div`а
+
+    let imagesByColor = productImages.get(buttonColor); // из Map достаем другую Map по ключу(цвет = green/red)
+    divText.innerHTML = imagesByColor.get(buttonDiv.id); // в p присваиваем картинку которая соответсвует продукту (buttonDiv.id)
+
 };
 
 for (let i = 0; i < plants.length; i++) {
@@ -31,7 +35,7 @@ function createPlantCard(plant) {
     let divForProduct = document.createElement('div');
 
     let text = document.createElement('p');
-    text.innerHTML = plant.productName;
+    text.innerHTML = plant.productImage;
     text.id = 'divText';
     divForProduct.appendChild(text);
 
@@ -39,9 +43,15 @@ function createPlantCard(plant) {
     divForProduct.id = plant.productName;
     cardsWrapper.appendChild(divForProduct);
 
-    let button = document.createElement('button');
-    button.onclick = tmp;
-    divForProduct.appendChild(button);
+    let greenButton = document.createElement('button');
+    greenButton.onclick = tmp;
+    greenButton.className = 'green';
+    divForProduct.appendChild(greenButton);
+
+    let redButton = document.createElement('button');
+    redButton.onclick = tmp;
+    redButton.className = 'red';
+    divForProduct.appendChild(redButton);
 }
 
 
