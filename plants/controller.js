@@ -1,29 +1,12 @@
-class Plant {
-    constructor(productName, productImage) {
-        this.productName = productName;
-        this.productImage = productImage;
-    }
-}
-
-let xxx = new Plant('xxxName', 'images/plant_xxx_green.jpg');
-let yyy = new Plant('yyyName', 'images/plant_yyy_green.jpg');
-
 let plants = [xxx, yyy];
 
-let productImages = new Map();
-productImages.set('green', new Map([['xxxName', 'images/plant_xxx_green.jpg'],['yyyName', 'images/plant_yyy_green.jpg']]));
-productImages.set('red', new Map([['xxxName', 'images/plant_xxx_red.jpg'],['yyyName', 'images/plant_yyy_red.jpg']]));
-
-
 let tmp = function tmp() {
-
     let buttonColor = this.getAttribute('class'); // получаем класс кнопки - это цвет green/red
     let buttonDiv = this.parentNode; // достаем див в котором лежит кнопка
     let divImage = buttonDiv.firstChild; // достаем p из div`а
 
     let imagesByColor = productImages.get(buttonColor); // из Map достаем другую Map по ключу(цвет = green/red)
     divImage.src = imagesByColor.get(buttonDiv.id); // в p присваиваем картинку которая соответсвует продукту (buttonDiv.id)
-
 };
 
 for (let i = 0; i < plants.length; i++) {
@@ -53,7 +36,3 @@ function createPlantCard(plant) {
     redButton.className = 'red';
     divForProduct.appendChild(redButton);
 }
-
-
-
-
