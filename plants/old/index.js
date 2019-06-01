@@ -10,9 +10,9 @@ class Plant {
     }
 }
 
-let hoyaHeart = new Plant('hoyaHeart', 'img/plant_1.jpg', 'Hoya Heart In Ezra Planter', 'Mini', '$26',
+let hoyaHeart = new Plant('hoyaHeart', 'img/plant_xxx_green.jpg', 'Hoya Heart In Ezra Planter', 'Mini', '$26',
     ['grey', 'indianred', 'seagreen'], ['img/plant_5_2.jpg', 'img/plant_5_3.jpg']);
-let philodendron = new Plant('philodendron', 'img/plant_2.jpg', 'Philodendron Green In Small Grant', 'Small', '$15',
+let philodendron = new Plant('philodendron', 'img/plant_yyy_green.jpg', 'Philodendron Green In Small Grant', 'Small', '$15',
     ['grey', 'indianred', 'seagreen'], ['img/plant_5_2.jpg', 'img/plant_5_3.jpg']);
 let haworthia = new Plant('haworthia', 'img/plant_3.jpg', 'Haworthia Zebra In Mini Grant Planter', 'Mini', '$30',
     ['wheat', 'indianred', 'seagreen'], ['img/plant_5_2.jpg', 'img/plant_5_3.jpg']);
