@@ -1,0 +1,153 @@
+img {
+    height: 73%;
+    width: 95%;
+}
+
+#cardsWrapper {
+    margin-left: 12px;
+}
+
+.card {
+    display: inline-block;
+    /*border: 1px solid black;*/
+    width: 300px;
+    height: 80vh;
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+    vertical-align:bottom;
+}
+
+h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.plantSize {
+    font-size: 18px;
+    color: dimgrey;
+}
+
+.plantPrice {
+    font-size: 19px;
+    float: right;
+    margin-right: 19px;
+    font-style: italic;
+}
+
+#changeButton {
+    display: block;
+    background-color: darkolivegreen;
+    margin: 30px auto 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*styles for list  */
+.cardList {
+    /*border: 2px solid grey;*/
+    width: 85%;
+    height: 150px;
+    display: flex;
+    margin-left: 30px;
+}
+
+.plantPhotoList {
+    height: 100%;
+    width: 120px;
+    margin-right: 30px;
+    margin-left: 85px;
+
+}
+
+.plantTitleList {
+    display: block;
+    margin-right: 10px;
+}
+
+.plantTitleList:after {
+    content: ",";
+}
+
+.plantSizeList {
+    display: none;
+}
+
+.whiteButton {
+    background-color: wheat;
+    padding: 11px;
+    border-radius: 15px;
+    border: none;
+    margin-right: 5px;
+}
+
+.redButton {
+    background-color: indianred;
+    padding: 11px;
+    border-radius: 15px;
+    border: none;
+    margin-right: 5px;
+}
+
+.greenButton {
+    background-color: seagreen;
+    padding: 11px;
+    border-radius: 15px;
+    border: none;
+}
+
+
+/*.whiteButton:hover,*/
+/*.redButton:hover,*/
+/*.greenButton:hover {*/
+
+/*}*/
+
+/*.card a {*/
+    /*padding: .3px 11px;*/
+    /*border-radius: 15px;*/
+    /*border: none;*/
+    /*margin-right: 5px;*/
+/*}*/
+
+/*.colorButtonList {*/
+    /*display: none;*/
+/*}*/
+
+
+.buyButton {
+    padding: 5px 12px;
+    border-radius: 22px;
+    color: seagreen;
+    margin-left: 100px;
+    background-color: white;
+    border: 1px solid seagreen;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.greenButtonList,
+.redButtonList,
+.whiteButtonList{
+    display: none;
+}
+
+.buyButtonList {
+    padding: 0 17px;
+    height: 33px;
+}
+
+
+
+
+
