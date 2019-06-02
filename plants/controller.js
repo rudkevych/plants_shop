@@ -1,4 +1,4 @@
-let plants = [xxx, yyy];
+let plants = [haworthia, philodendron];
 
 let tmp = function tmp() {
     let buttonColor = this.getAttribute('class'); // получаем класс кнопки - это цвет green/red
