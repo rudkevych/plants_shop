@@ -48,3 +48,4 @@ productImages.set('white', new Map([
     ['snake', 'images/snake_white.jpg'],
     ['succulentTrio', 'images/succulentTrio_white.jpg']
 ]));
+

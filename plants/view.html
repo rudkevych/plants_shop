@@ -11,20 +11,22 @@
 <button id="changeButton" onclick="switchToList()">CHANGE VIEW</button>
 <div id="cardsWrapper"></div>
 
-<div id="newPlant">
-    <p>Here you can add new plant to the store</p>
-    <form action="">
-        <label for="newProductImage">Add photo</label>
-        <input type="file" id="newProductImage">
-        <label for="newProductName">Add name</label>
-        <input type="text" id="newProductName">
-        <label for="newProductSize">Add size</label>
-        <input type="text" id="newProductSize">
-        <label for="newProductPrice">Add price</label>
-        <input type="text" id="newProductPrice">
-        <input type="submit" value="OK">
-    </form>
+<div id="newProductWrapper">
+    <input type='file' accept='image/*' onchange='getImageData(event)'><br>
+    <label for="newProductName">Name of plant</label>
+    <input type="text" id="newProductName">
+    <label for="newProductFullName">Description</label>
+    <input type="text" id="newProductFullName">
+    <label for="newProductSize">Size of plant</label>
+    <input type="text" id="newProductSize">
+    <label for="newProductPrice">Price</label>
+    <input type="text" id="newProductPrice">
+    <button type="submit" id="addNewProductButton" onclick="addNewProduct()">Add</button>
 </div>
+
+<p id="imgText"></p>
+<!--<button id="printUrls" style="width: 100px; height: 50px" onclick="printArray()">print Urls</button>-->
+<!--<div id="urlWrapper"></div>-->
 
 <script src="model.js"></script>
 <script src="controller.js"></script>
