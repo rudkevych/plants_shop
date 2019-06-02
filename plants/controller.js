@@ -35,4 +35,9 @@ function createPlantCard(plant) {
     redButton.onclick = tmp;
     redButton.className = 'red';
     divForProduct.appendChild(redButton);
+
+    let whiteButton = document.createElement('button');
+    whiteButton.onclick = tmp;
+    whiteButton.className = 'white';
+    divForProduct.appendChild(whiteButton);
 }

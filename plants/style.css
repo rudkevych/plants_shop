@@ -54,36 +54,36 @@ h4 {
 }
 
 /*styles for list  */
-.cardList {
-    /*border: 2px solid grey;*/
-    width: 85%;
-    height: 150px;
-    display: flex;
-    margin-left: 30px;
-}
+/*.cardList {*/
+    /*!*border: 2px solid grey;*!*/
+    /*width: 85%;*/
+    /*height: 150px;*/
+    /*display: flex;*/
+    /*margin-left: 30px;*/
+/*}*/
 
-.plantPhotoList {
-    height: 100%;
-    width: 120px;
-    margin-right: 30px;
-    margin-left: 85px;
+/*.plantPhotoList {*/
+    /*height: 100%;*/
+    /*width: 120px;*/
+    /*margin-right: 30px;*/
+    /*margin-left: 85px;*/
 
-}
+/*}*/
 
-.plantTitleList {
-    display: block;
-    margin-right: 10px;
-}
+/*.plantTitleList {*/
+    /*display: block;*/
+    /*margin-right: 10px;*/
+/*}*/
 
-.plantTitleList:after {
-    content: ",";
-}
+/*.plantTitleList:after {*/
+    /*content: ",";*/
+/*}*/
 
-.plantSizeList {
-    display: none;
-}
+/*.plantSizeList {*/
+    /*display: none;*/
+/*}*/
 
-.whiteButton {
+.white {
     background-color: wheat;
     padding: 11px;
     border-radius: 15px;
@@ -91,39 +91,21 @@ h4 {
     margin-right: 5px;
 }
 
-.redButton {
+.red {
     background-color: indianred;
     padding: 11px;
     border-radius: 15px;
     border: none;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
-.greenButton {
+.green {
     background-color: seagreen;
     padding: 11px;
     border-radius: 15px;
     border: none;
+    margin-right: 10px;
 }
-
-
-/*.whiteButton:hover,*/
-/*.redButton:hover,*/
-/*.greenButton:hover {*/
-
-/*}*/
-
-/*.card a {*/
-    /*padding: .3px 11px;*/
-    /*border-radius: 15px;*/
-    /*border: none;*/
-    /*margin-right: 5px;*/
-/*}*/
-
-/*.colorButtonList {*/
-    /*display: none;*/
-/*}*/
-
 
 .buyButton {
     padding: 5px 12px;
