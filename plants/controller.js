@@ -26,6 +26,21 @@ function createPlantCard(plant) {
     divForProduct.id = plant.productName;
     cardsWrapper.appendChild(divForProduct);
 
+    let fullPlantName = document.createElement('h4');
+    fullPlantName.innerHTML = plant.fullProductName;
+    fullPlantName.className = 'fullPlantName';
+    divForProduct.appendChild(fullPlantName);
+
+    let plantSize = document.createElement('h5');
+    plantSize.innerHTML = plant.plantSize;
+    plantSize.className = 'plantSize';
+    divForProduct.appendChild(plantSize);
+
+    let plantPrice = document.createElement('h5');
+    plantPrice.innerHTML = plant.plantPrice;
+    plantPrice.className = 'plantPrice';
+    divForProduct.appendChild(plantPrice);
+
     let greenButton = document.createElement('button');
     greenButton.onclick = tmp;
     greenButton.className = 'green';
