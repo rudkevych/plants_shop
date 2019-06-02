@@ -1,4 +1,4 @@
-let plants = [haworthia, philodendron];
+let plants = [haworthia, philodendron, echeveria, peperomia, haworthiaZebra, pilea, snake, succulentTrio];
 
 let tmp = function tmp() {
     let buttonColor = this.getAttribute('class'); // получаем класс кнопки - это цвет green/red
