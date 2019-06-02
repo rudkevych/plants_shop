@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<button id="changeViewButton" onclick="changeView()">CHANGE VIEW</button>
+
+<button id="changeButton" onclick="switchToList()">CHANGE VIEW</button>
 <div id="cardsWrapper"></div>
+
+<div id="newPlant">
+    <p>Here you can add new plant to the store</p>
+    <form action="">
+        <label for="newProductImage">Add photo</label>
+        <input type="file" id="newProductImage">
+        <label for="newProductName">Add name</label>
+        <input type="text" id="newProductName">
+        <label for="newProductSize">Add size</label>
+        <input type="text" id="newProductSize">
+        <label for="newProductPrice">Add price</label>
+        <input type="text" id="newProductPrice">
+        <input type="submit" value="OK">
+    </form>
+</div>
 
 <script src="model.js"></script>
 <script src="controller.js"></script>
 </body>
 </html>
-
