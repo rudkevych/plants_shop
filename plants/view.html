@@ -12,10 +12,13 @@
 <div id="cardsWrapper"></div>
 
 <div id="newProductWrapper">
+    <h4>Here you can add new plant. Please upload photos in green, red and white colors</h4>
 
-    <input type='file' accept='image/*' onchange='getImageData(event)' id="newGreenPhoto"><br>
-    <input type='file' accept='image/*' onchange='getImageData(event)' id="newRedPhoto"><br>
-    <input type='file' accept='image/*' onchange='getImageData(event)' id="newWhitePhoto"><br>
+    <input type='file' accept='image/*' onchange='getGreenImageData(event)' id="newGreenPhoto">
+    <input type='file' accept='image/*' onchange='getRedImageData(event)' id="newRedPhoto">
+    <input type='file' accept='image/*' onchange='getWhiteImageData(event)' id="newWhitePhoto">
+
+    <div id="imgText"></div>
 
     <label for="newProductName">Name of plant</label>
     <input type="text" id="newProductName">
@@ -25,11 +28,9 @@
     <input type="text" id="newProductSize">
     <label for="newProductPrice">Price</label>
     <input type="text" id="newProductPrice">
+
     <button type="submit" id="addNewProductButton" onclick="addNewProduct()">Add</button>
 </div>
-
-<p id="imgText"></p>
-
 
 <script src="model.js"></script>
 <script src="controller/controller.js"></script>
