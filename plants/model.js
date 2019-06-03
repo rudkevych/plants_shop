@@ -1,8 +1,8 @@
 class Plant {
-    constructor(productName, productImage, fullProductName, plantSize, plantPrice) {
+    constructor(productName, productImage, productDescription, plantSize, plantPrice) {
         this.productName = productName;
         this.productImage = productImage;
-        this.fullProductName = fullProductName;
+        this.productDescription = productDescription;
         this.plantSize = plantSize;
         this.plantPrice = plantPrice;
     }

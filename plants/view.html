@@ -12,11 +12,15 @@
 <div id="cardsWrapper"></div>
 
 <div id="newProductWrapper">
-    <input type='file' accept='image/*' onchange='getImageData(event)'><br>
+
+    <input type='file' accept='image/*' onchange='getImageData(event)' id="newGreenPhoto"><br>
+    <input type='file' accept='image/*' onchange='getImageData(event)' id="newRedPhoto"><br>
+    <input type='file' accept='image/*' onchange='getImageData(event)' id="newWhitePhoto"><br>
+
     <label for="newProductName">Name of plant</label>
     <input type="text" id="newProductName">
-    <label for="newProductFullName">Description</label>
-    <input type="text" id="newProductFullName">
+    <label for="productDescription">Description</label>
+    <input type="text" id="productDescription">
     <label for="newProductSize">Size of plant</label>
     <input type="text" id="newProductSize">
     <label for="newProductPrice">Price</label>

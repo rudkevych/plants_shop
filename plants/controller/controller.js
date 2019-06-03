@@ -1,12 +1,12 @@
 let plants = [haworthia, philodendron, echeveria, peperomia, haworthiaZebra, pilea, snake, succulentTrio];
 
 let changeColor = function changeColor() {
-    let buttonColor = this.getAttribute('class'); // получаем класс кнопки - это цвет green/red
-    let buttonDiv = this.parentNode; // достаем див в котором лежит кнопка
-    let divImage = buttonDiv.firstChild; // достаем p из div`а
+    let buttonColor = this.getAttribute('class');
+    let buttonDiv = this.parentNode;
+    let divImage = buttonDiv.firstChild;
 
-    let imagesByColor = productImages.get(buttonColor); // из Map достаем другую Map по ключу(цвет = green/red)
-    divImage.src = imagesByColor.get(buttonDiv.id); // в p присваиваем картинку которая соответсвует продукту (buttonDiv.id)
+    let imagesByColor = productImages.get(buttonColor);
+    divImage.src = imagesByColor.get(buttonDiv.id);
 };
 
 for (let i = 0; i < plants.length; i++) {
@@ -35,7 +35,7 @@ function createPlantCard(plant) {
     divForProduct.appendChild(plantImage);
 
     let fullPlantName = document.createElement('h4');
-    fullPlantName.innerHTML = plant.fullProductName;
+    fullPlantName.innerHTML = plant.productDescription;
     fullPlantName.className = 'fullPlantName';
     divForProduct.appendChild(fullPlantName);
 

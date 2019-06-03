@@ -20,8 +20,17 @@ function addNewProduct() {
     let newProductName = document.getElementById('newProductName');
     let newProductNameValue = newProductName.value;
     greenMap.set(newProductNameValue, dataURL);
-    console.log(greenMap);
 
-    let newProduct = new Plant(newProductNameValue, dataURL, 'test description', 'test size', 'test price');
+    let newDescription = document.getElementById('productDescription');
+    let newDescriptionValue = newDescription.value;
+
+    let newProductSize = document.getElementById('newProductSize');
+    let newProductSizeValue = newProductSize.value;
+
+    let newProductPrice = document.getElementById('newProductPrice');
+    let newProductPriceValue = newProductPrice.value;
+
+
+    let newProduct = new Plant(newProductNameValue, dataURL, newDescriptionValue, newProductSizeValue, newProductPriceValue);
     createPlantCard(newProduct);
 }
