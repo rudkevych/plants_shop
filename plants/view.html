@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<button id="changeButton" onclick="switchToList()">CHANGE VIEW</button>
+<button id="changeButton" onclick="changeView()">CHANGE VIEW</button>
 <div id="cardsWrapper"></div>
 
 <div id="newProductWrapper">
@@ -25,10 +25,11 @@
 </div>
 
 <p id="imgText"></p>
-<!--<button id="printUrls" style="width: 100px; height: 50px" onclick="printArray()">print Urls</button>-->
-<!--<div id="urlWrapper"></div>-->
+
 
 <script src="model.js"></script>
-<script src="controller.js"></script>
+<script src="controller/controller.js"></script>
+<script src="controller/newProductHandler.js"></script>
+<script src="controller/viewHandler.js"></script>
 </body>
 </html>
