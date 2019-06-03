@@ -53,5 +53,9 @@ function createPlantCard(plant) {
     createButton(divForProduct, 'red');
     createButton(divForProduct, 'white');
 
-    // добавить кнопку купить
+    let buyButton = document.createElement('button');
+    buyButton.onclick = changeColor;
+    buyButton.className = 'buyButton';
+    buyButton.innerHTML = '+';
+    divForProduct.appendChild(buyButton);
 }

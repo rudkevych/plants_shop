@@ -7,34 +7,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+    <div>
+        <h2>Plants shop</h2>
+    </div>
+    <div>
+        <h1>Your comfortable flat starts with plants</h1>
+    </div>
+</header>
+<main>
+    <div class="buttons">
+        <button id="changeButton" onclick="changeView()">CHANGE VIEW</button>
+        <button id="sortByPrice" onclick="sortPlantsByPrice()">Sort by price</button>
+    </div>
 
-<button id="changeButton" onclick="changeView()">CHANGE VIEW</button>
-<div id="cardsWrapper"></div>
+    <div id="cardsWrapper"></div>
 
-<div id="newProductWrapper">
-    <h4>Here you can add new plant. Please upload photos in green, red and white colors</h4>
+    <div class="newProductWrapper">
+        <h4>Here you can add new plant. Please upload photos in green, red and white colors</h4>
 
-    <input type='file' accept='image/*' onchange='getGreenImageData(event)' id="newGreenPhoto">
-    <input type='file' accept='image/*' onchange='getRedImageData(event)' id="newRedPhoto">
-    <input type='file' accept='image/*' onchange='getWhiteImageData(event)' id="newWhitePhoto">
+        <input type='file' accept='image/*' onchange='getGreenImageData(event)' id="newGreenPhoto">
+        <input type='file' accept='image/*' onchange='getRedImageData(event)' id="newRedPhoto">
+        <input type='file' accept='image/*' onchange='getWhiteImageData(event)' id="newWhitePhoto">
 
-    <div id="imgText"></div>
+        <div id="imgText"></div>
 
-    <label for="newProductName">Name of plant</label>
-    <input type="text" id="newProductName">
-    <label for="productDescription">Description</label>
-    <input type="text" id="productDescription">
-    <label for="newProductSize">Size of plant</label>
-    <input type="text" id="newProductSize">
-    <label for="newProductPrice">Price</label>
-    <input type="text" id="newProductPrice">
+        <label for="newProductName">Name of plant</label>
+        <input type="text" id="newProductName">
+        <label for="productDescription">Description</label>
+        <input type="text" id="productDescription">
+        <label for="newProductSize">Size of plant</label>
+        <input type="text" id="newProductSize">
+        <label for="newProductPrice">Price</label>
+        <input type="text" id="newProductPrice">
 
-    <button type="submit" id="addNewProductButton" onclick="addNewProduct()">Add</button>
-</div>
+        <button type="submit" id="addNewProductButton" onclick="addNewProduct()">Add</button>
+    </div>
+</main>
+
+<footer>
+
+</footer>
 
 <script src="model.js"></script>
 <script src="controller/controller.js"></script>
 <script src="controller/newProductHandler.js"></script>
 <script src="controller/viewHandler.js"></script>
+<script src="controller/sortHandler.js"></script>
 </body>
 </html>

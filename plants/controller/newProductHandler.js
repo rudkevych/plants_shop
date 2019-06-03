@@ -57,8 +57,6 @@ function addNewProduct() {
     redMap.set(newProductNameValue, dataRedURL);
     whiteMap.set(newProductNameValue, dataWhiteURL);
 
-    console.log('green', greenMap, 'red', redMap, 'white', whiteMap);
-
     let newDescription = document.getElementById('productDescription');
     let newDescriptionValue = newDescription.value;
 

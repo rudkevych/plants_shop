@@ -40,9 +40,9 @@ function changeView() {
         greenButtons[i].classList.toggle("greenButtonList");
     }
 
-    // let buyButtons = document.getElementsByClassName('buyButton');
-    // for (i = 0; i < greenButtons.length; i++) {
-    //     buyButtons[i].classList.toggle("buyButtonList");
-    // }
+    let buyButtons = document.getElementsByClassName('buyButton');
+    for (i = 0; i < greenButtons.length; i++) {
+        buyButtons[i].classList.toggle("buyButtonList");
+    }
 
 }

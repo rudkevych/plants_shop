@@ -1,3 +1,27 @@
+body {
+    margin: 0;
+}
+
+header {
+    font-family: 'Playfair Display', serif;
+}
+
+header h2 {
+    background: darkolivegreen;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header h1 {
+    width: 400px;
+    font-size: 49px;
+    margin-left: 20px;
+}
+
 img {
     height: 73%;
     width: 95%;
@@ -104,16 +128,16 @@ h4 {
     margin-right: 10px;
 }
 
-/*.buyButton {*/
-    /*padding: 5px 12px;*/
-    /*border-radius: 22px;*/
-    /*color: seagreen;*/
-    /*margin-left: 100px;*/
-    /*background-color: white;*/
-    /*border: 1px solid seagreen;*/
-    /*font-size: 18px;*/
-    /*font-weight: bold;*/
-/*}*/
+.buyButton {
+    padding: 5px 12px;
+    border-radius: 22px;
+    color: seagreen;
+    margin-left: 100px;
+    background-color: white;
+    border: 1px solid seagreen;
+    font-size: 18px;
+    font-weight: bold;
+}
 
 .greenButtonList,
 .redButtonList,
@@ -121,10 +145,10 @@ h4 {
     display: none;
 }
 
-/*.buyButtonList {*/
-    /*padding: 0 17px;*/
-    /*height: 33px;*/
-/*}*/
+.buyButtonList {
+    padding: 0 17px;
+    height: 33px;
+}
 
 #addNewProductButton {
     width: 100px;
@@ -135,12 +159,13 @@ h4 {
     color: white;
 }
 
-#newProductWrapper {
+.newProductWrapper {
     display: inline-grid;
     padding: 10px;
     font-family: 'Playfair Display', serif;
     font-size: 15px;
     width: 385px;
+    margin-left: 10px;
 }
 
 label {
