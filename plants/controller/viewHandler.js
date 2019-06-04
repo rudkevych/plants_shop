@@ -44,5 +44,4 @@ function changeView() {
     for (i = 0; i < greenButtons.length; i++) {
         buyButtons[i].classList.toggle("buyButtonList");
     }
-
 }

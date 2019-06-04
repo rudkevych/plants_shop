@@ -135,6 +135,13 @@ h4 {
     border: 1px solid seagreen;
     font-size: 18px;
     font-weight: bold;
+    position: relative;
+    bottom: 25px;
+}
+
+.buyButton:hover {
+    color: white;
+    background-color: seagreen;
 }
 
 .greenButtonList,

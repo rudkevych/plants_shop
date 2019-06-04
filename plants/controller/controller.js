@@ -59,8 +59,29 @@ function createPlantCard(plant) {
     createButton(divForProduct, 'white');
 
     let buyButton = document.createElement('button');
-    buyButton.onclick = changeColor;
     buyButton.className = 'buyButton';
     buyButton.innerHTML = '+';
+    buyButton.onclick = addProductToCard;
     divForProduct.appendChild(buyButton);
+}
+
+let cartCounter = 0;
+
+function addProductToCard() {
+    let plantNameFromDiv = this.parentNode.id;
+    let foundPlant = plants.find(obj => {
+        return obj.productName === plantNameFromDiv;
+    });
+    let plant = JSON.stringify(foundPlant);
+
+    localStorage.setItem(plantNameFromDiv, plant);
+    cartCounter++;
+    console.log(cartCounter);
+
+    let cartButton = document.getElementById('cartButton');
+    cartButton.innerHTML = 'Cart(' + cartCounter + ')';
+}
+
+function cleanLocalStorage() {
+    localStorage.clear();
 }

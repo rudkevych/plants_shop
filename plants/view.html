@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Plants shop</title>
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -21,7 +21,8 @@
         <button id="changeButton" onclick="changeView()">CHANGE VIEW</button>
         <button id="sortByPrice" onclick="sortPlantsByPrice()">Sort by price</button>
         <button id="sortByInStock" onclick="sortPlantsByInStock()">Sort by quantity in stock</button>
-        <button id="cardButton" onclick="">Card</button>
+        <button onclick="cleanLocalStorage()">Clean local storage</button>
+        <button id="cartButton" onclick="window.location='cart.html'">Cart</button>
     </div>
 
     <div id="cardsWrapper"></div>
@@ -52,7 +53,7 @@
 
 </footer>
 
-<script src="model.js"></script>
+<script src="model/model.js"></script>
 <script src="controller/controller.js"></script>
 <script src="controller/newProductHandler.js"></script>
 <script src="controller/viewHandler.js"></script>
