@@ -27,6 +27,11 @@ img {
     width: 95%;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 #cardsWrapper {
     margin-left: 12px;
 }
@@ -50,9 +55,15 @@ h4 {
     margin-bottom: 5px;
 }
 
-.plantSize {
+.plantSize,
+.quantityInStock {
     font-size: 18px;
     color: dimgrey;
+    font-weight: bold;
+}
+
+.quantityInStock {
+    color: darkseagreen;
 }
 
 .plantPrice {
@@ -60,19 +71,6 @@ h4 {
     float: right;
     margin-right: 19px;
     font-style: italic;
-}
-
-#changeButton {
-    display: block;
-    background-color: darkolivegreen;
-    margin: 30px auto 50px;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
 }
 
 /*styles for list */

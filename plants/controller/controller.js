@@ -49,6 +49,11 @@ function createPlantCard(plant) {
     plantPrice.className = 'plantPrice';
     divForProduct.appendChild(plantPrice);
 
+    let quantityInStock = document.createElement('p');
+    quantityInStock.innerHTML = plant.plantsInStock;
+    quantityInStock.className = 'quantityInStock';
+    divForProduct.appendChild(quantityInStock);
+
     createButton(divForProduct, 'green');
     createButton(divForProduct, 'red');
     createButton(divForProduct, 'white');
