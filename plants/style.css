@@ -7,7 +7,7 @@ header {
 }
 
 header h2 {
-    background: darkolivegreen;
+    background: darkseagreen;
     margin: 0;
     padding: 0;
     height: 50px;
@@ -20,6 +20,11 @@ header h1 {
     width: 400px;
     font-size: 49px;
     margin-left: 20px;
+    display: inline-block;
+}
+
+.mainTextBlock {
+    text-align: center;
 }
 
 img {
@@ -34,6 +39,7 @@ p {
 
 #cardsWrapper {
     margin-left: 12px;
+    text-align: center;
 }
 
 .card {
@@ -42,7 +48,7 @@ p {
     height: 80vh;
     padding: 10px;
     font-family: 'Playfair Display', serif;
-    vertical-align:bottom;
+    vertical-align: bottom;
 }
 
 h4, h5, h6 {
@@ -126,6 +132,23 @@ h4 {
     margin-right: 10px;
 }
 
+button {
+    border: 0;
+    background-color: grey;
+    color: white;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkseagreen;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .buyButton {
     padding: 5px 12px;
     border-radius: 22px;
@@ -136,7 +159,7 @@ h4 {
     font-size: 18px;
     font-weight: bold;
     position: relative;
-    bottom: 25px;
+    bottom: 10px;
 }
 
 .buyButton:hover {
@@ -146,7 +169,7 @@ h4 {
 
 .greenButtonList,
 .redButtonList,
-.whiteButtonList{
+.whiteButtonList {
     display: none;
 }
 

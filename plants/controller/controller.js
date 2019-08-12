@@ -43,7 +43,7 @@ function createPlantCard(plantId, plantObject) {
     divForProduct.appendChild(plantSize);
 
     let plantPrice = document.createElement('h5');
-    plantPrice.innerHTML = plantObject.plantPrice;
+    plantPrice.innerHTML = `$ ${plantObject.plantPrice}`;
     plantPrice.className = 'plantPrice';
     divForProduct.appendChild(plantPrice);
 
